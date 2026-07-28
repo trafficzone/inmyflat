@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   description: 'Skontaktuj się z InMyFlat. Umów bezpłatną konsultację e-commerce. Odpowiadamy w ciągu 24 godzin.',
 };
 
-export default function KontaktLayout({ children }: { children: React.ReactNode }) {
+export default function ContactLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
