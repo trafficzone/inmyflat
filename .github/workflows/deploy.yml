@@ -1,45 +1,49 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment, cancelling in-progress runs.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write # required for Workload Identity Federation
-
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
-      - run: npm ci
-
-      - run: npm run build
-
-      - uses: google-github-actions/auth@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with Next.js
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
-          service_account: ${{ vars.GH_DEPLOY_SA }}
+          path: ./out
 
-      - uses: google-github-actions/setup-gcloud@v2
-
-      - name: Sync to GCS
-        run: gsutil -m rsync -r -d out/ gs://inmyflat.com/
-
-      - name: Set cache headers
-        run: |
-          # No-cache for HTML, sitemap, robots.txt
-          gsutil -m setmeta -h "Cache-Control:public, max-age=0, must-revalidate" \
-            -r gs://inmyflat.com/
-
-          # Long-lived cache for Next.js hashed assets
-          gsutil -m setmeta -h "Cache-Control:public, max-age=31536000, immutable" \
-            -r gs://inmyflat.com/_next/static/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
