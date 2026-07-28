@@ -130,7 +130,7 @@ export default function ONasPage() {
           Chcesz poznać nas lepiej?
         </h2>
         <p style={{ color: '#999', fontSize: '17px', marginBottom: '32px' }}>Napisz do nas – pierwsze spotkanie jest bezpłatne i niezobowiązujące.</p>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Skontaktuj się <ArrowRight size={16} />
         </Link>
       </section>

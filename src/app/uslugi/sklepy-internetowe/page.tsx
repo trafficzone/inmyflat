@@ -50,7 +50,7 @@ export default function SklepyPage() {
             Projektujemy i wdrażamy sklepy Shopify i WooCommerce gotowe do sprzedaży od pierwszego dnia. Bez zbędnych komplikacji.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <Link href="/kontakt" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
+            <Link href="/contact" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
             <span style={{ color: '#D4A853', fontFamily: 'var(--font-syne), sans-serif', fontWeight: 700, fontSize: '16px', display: 'flex', alignItems: 'center' }}>od 4 000 zł</span>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function SklepyPage() {
           Gotowy na własny sklep?
         </h2>
         <p style={{ color: '#999', fontSize: '17px', marginBottom: '32px' }}>Zadzwoń lub napisz – pierwsze spotkanie jest bezpłatne.</p>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Umów bezpłatną konsultację <ArrowRight size={16} />
         </Link>
       </section>

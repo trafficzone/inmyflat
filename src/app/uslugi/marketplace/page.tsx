@@ -49,7 +49,7 @@ export default function MarketplacePage() {
             Allegro i Amazon – uruchamiamy, konfigurujemy i skalujemy Twoją sprzedaż na największych platformach w Polsce i Europie.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <Link href="/kontakt" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
+            <Link href="/contact" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
             <span style={{ color: '#D4A853', fontFamily: 'var(--font-syne), sans-serif', fontWeight: 700, fontSize: '16px', display: 'flex', alignItems: 'center' }}>od 1 500 zł</span>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function MarketplacePage() {
       <section style={{ padding: '80px 24px', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 800, fontSize: '40px', color: '#F5F5F5', marginBottom: '16px' }}>Chcesz sprzedawać na Allegro lub Amazon?</h2>
         <p style={{ color: '#999', fontSize: '17px', marginBottom: '32px' }}>Pierwsze spotkanie jest bezpłatne – omówimy potencjał Twojego biznesu.</p>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Napisz do nas <ArrowRight size={16} />
         </Link>
       </section>

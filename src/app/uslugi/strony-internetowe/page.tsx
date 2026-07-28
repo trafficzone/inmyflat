@@ -49,7 +49,7 @@ export default function StronyPage() {
             Strony, które nie tylko wyglądają dobrze – są zaprojektowane, żeby zamieniać odwiedzających w klientów.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <Link href="/kontakt" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
+            <Link href="/contact" className="btn-primary">Umów konsultację <ArrowRight size={16} /></Link>
             <span style={{ color: '#D4A853', fontFamily: 'var(--font-syne), sans-serif', fontWeight: 700, fontSize: '16px', display: 'flex', alignItems: 'center' }}>od 1 800 zł</span>
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function StronyPage() {
       <section style={{ padding: '80px 24px', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 800, fontSize: '40px', color: '#F5F5F5', marginBottom: '16px' }}>Potrzebujesz strony?</h2>
         <p style={{ color: '#999', fontSize: '17px', marginBottom: '32px' }}>Opowiedz nam o projekcie – wycenimy i doradzimy bezpłatnie.</p>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Napisz do nas <ArrowRight size={16} />
         </Link>
       </section>

@@ -123,7 +123,7 @@ export default function RealizacjePage() {
         <h2 style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 800, fontSize: '36px', color: '#F5F5F5', marginBottom: '32px' }}>
           Porozmawiajmy o Twoim projekcie
         </h2>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Umów bezpłatną konsultację <ArrowRight size={16} />
         </Link>
       </section>

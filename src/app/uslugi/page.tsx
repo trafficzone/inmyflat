@@ -14,7 +14,7 @@ const services = [
     desc: 'Shopify lub WooCommerce – dopasowujemy platformę do Twojego biznesu. Projektujemy, wdrażamy i konfigurujemy sklep gotowy do sprzedaży od pierwszego dnia.',
     price: 'od 4 000 zł',
     features: ['Projekt graficzny', 'Wdrożenie i konfiguracja', 'Bramki płatności', 'Integracje z systemami', 'Szkolenie z obsługi'],
-    href: '/uslugi/sklepy-internetowe',
+    href: '/services/online-stores',
   },
   {
     icon: <Globe size={28} />,
@@ -22,7 +22,7 @@ const services = [
     desc: 'Strony wizytówki i landing pages zaprojektowane pod konwersję. Szybkie, responsywne, zoptymalizowane pod SEO.',
     price: 'od 2 500 zł',
     features: ['Projekt i UX', 'Responsywność (mobile)', 'Optymalizacja SEO', 'Formularz kontaktowy', 'CMS do samodzielnej edycji'],
-    href: '/uslugi/strony-internetowe',
+    href: '/services/websites',
   },
   {
     icon: <Package size={28} />,
@@ -30,7 +30,7 @@ const services = [
     desc: 'Allegro i Amazon – uruchamiamy, konfigurujemy i optymalizujemy Twoją sprzedaż na największych platformach w Polsce i Europie.',
     price: 'od 1 500 zł',
     features: ['Konfiguracja konta', 'Optymalizacja ofert', 'Integracja z magazynem', 'Strategia cenowa', 'Wsparcie bieżące'],
-    href: '/uslugi/marketplace',
+    href: '/services/marketplace',
   },
   {
     icon: <TrendingUp size={28} />,
@@ -38,7 +38,7 @@ const services = [
     desc: 'Masz już sklep, ale wyniki nie satysfakcjonują? Audytujemy, optymalizujemy i wdrażamy zmiany, które realnie zwiększają sprzedaż.',
     price: 'od 800 zł / mies.',
     features: ['Audyt sklepu', 'Optymalizacja konwersji', 'Analityka i raportowanie', 'A/B testy', 'Doradztwo strategiczne'],
-    href: '/uslugi/wsparcie-ecommerce',
+    href: '/services/ecommerce-support',
   },
 ];
 
@@ -93,7 +93,7 @@ export default function UslugiPage() {
       <section style={{ borderTop: '1px solid #1A1A1A', padding: '80px 24px', textAlign: 'center' }}>
         <p style={{ color: '#999', fontSize: '17px', marginBottom: '12px' }}>Nie wiesz, czego potrzebujesz?</p>
         <h2 style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 800, fontSize: '36px', color: '#F5F5F5', marginBottom: '32px' }}>Napisz do nas, doradzimy bezpłatnie</h2>
-        <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
+        <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 36px' }}>
           Umów konsultację <ArrowRight size={16} />
         </Link>
       </section>
