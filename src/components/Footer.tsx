@@ -23,10 +23,10 @@ export default function Footer() {
             <p style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 600, fontSize: '14px', color: '#F5F5F5', marginBottom: '16px' }}>Usługi</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {[
-                { href: '/uslugi/sklepy-internetowe', label: 'Sklepy internetowe' },
-                { href: '/uslugi/strony-internetowe', label: 'Strony internetowe' },
-                { href: '/uslugi/marketplace', label: 'Marketplace' },
-                { href: '/uslugi/wsparcie-ecommerce', label: 'Wsparcie e-commerce' },
+                { href: '/services/online-stores', label: 'Sklepy internetowe' },
+                { href: '/services/websites', label: 'Strony internetowe' },
+                { href: '/services/marketplace', label: 'Marketplace' },
+                { href: '/services/ecommerce-support', label: 'Wsparcie e-commerce' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#555', fontSize: '14px', textDecoration: 'none', transition: 'color 0.2s' }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A853')}
@@ -41,9 +41,9 @@ export default function Footer() {
             <p style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 600, fontSize: '14px', color: '#F5F5F5', marginBottom: '16px' }}>Firma</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {[
-                { href: '/o-nas', label: 'O nas' },
-                { href: '/realizacje', label: 'Realizacje' },
-                { href: '/kontakt', label: 'Kontakt' },
+                { href: '/about', label: 'O nas' },
+                { href: '/projects', label: 'Realizacje' },
+                { href: '/contact', label: 'Kontakt' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#555', fontSize: '14px', textDecoration: 'none', transition: 'color 0.2s' }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A853')}
@@ -56,11 +56,11 @@ export default function Footer() {
 
           <div>
             <p style={{ fontFamily: 'var(--font-syne), sans-serif', fontWeight: 600, fontSize: '14px', color: '#F5F5F5', marginBottom: '16px' }}>Kontakt</p>
-            <a href="mailto:kontakt@inmyflat.pl" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#555', fontSize: '14px', textDecoration: 'none', transition: 'color 0.2s' }}
+            <a href="mailto:contact@inmyflat.com" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#555', fontSize: '14px', textDecoration: 'none', transition: 'color 0.2s' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A853')}
               onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}>
               <Mail size={14} />
-              kontakt@inmyflat.pl
+              contact@inmyflat.com
             </a>
           </div>
         </div>

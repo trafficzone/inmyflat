@@ -6,25 +6,25 @@ const services = [
     icon: <ShoppingCart size={22} />,
     title: 'Sklepy internetowe',
     desc: 'Shopify / WooCommerce – od projektu do wdrożenia. Sklepy gotowe do sprzedaży od pierwszego dnia.',
-    href: '/uslugi/sklepy-internetowe',
+    href: '/services/online-stores',
   },
   {
     icon: <Globe size={22} />,
     title: 'Strony internetowe',
     desc: 'Strony wizytówki i landing pages, które przyciągają klientów i budują zaufanie do marki.',
-    href: '/uslugi/strony-internetowe',
+    href: '/services/websites',
   },
   {
     icon: <Package size={22} />,
     title: 'Marketplace',
     desc: 'Allegro / Amazon – pełna konfiguracja, integracja i wsparcie w sprzedaży na największych platformach.',
-    href: '/uslugi/marketplace',
+    href: '/services/marketplace',
   },
   {
     icon: <TrendingUp size={22} />,
     title: 'Wsparcie e-commerce',
     desc: 'Optymalizacja, doradztwo i rozwój sprzedaży. Pomagamy skalować działanie i zwiększać konwersję.',
-    href: '/uslugi/wsparcie-ecommerce',
+    href: '/services/ecommerce-support',
   },
 ];
 
@@ -104,10 +104,10 @@ export default function Home() {
           </p>
 
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '16px 32px' }}>
+            <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '16px 32px' }}>
               Umów bezpłatną konsultację <ArrowRight size={18} />
             </Link>
-            <Link href="/realizacje" className="btn-secondary" style={{ fontSize: '16px', padding: '16px 32px' }}>
+            <Link href="/projects" className="btn-secondary" style={{ fontSize: '16px', padding: '16px 32px' }}>
               Zobacz realizacje
             </Link>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
           ))}
         </div>
         <div style={{ textAlign: 'center' }}>
-          <Link href="/uslugi" className="btn-primary">
+          <Link href="/services" className="btn-primary">
             Sprawdź jak pomagamy <ArrowRight size={16} />
           </Link>
         </div>
@@ -260,7 +260,7 @@ export default function Home() {
           <p style={{ color: '#999', fontSize: '17px', lineHeight: 1.7, marginBottom: '40px' }}>
             Umów bezpłatną konsultację i dowiedz się, jak możemy pomóc rozwinąć Twój biznes w internecie.
           </p>
-          <Link href="/kontakt" className="btn-primary" style={{ fontSize: '16px', padding: '18px 40px' }}>
+          <Link href="/contact" className="btn-primary" style={{ fontSize: '16px', padding: '18px 40px' }}>
             Umów konsultację <ArrowRight size={18} />
           </Link>
         </div>

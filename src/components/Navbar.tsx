@@ -7,9 +7,9 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Strona główna' },
-  { href: '/uslugi', label: 'Usługi' },
-  { href: '/realizacje', label: 'Realizacje' },
-  { href: '/o-nas', label: 'O nas' },
+  { href: '/services', label: 'Usługi' },
+  { href: '/projects', label: 'Realizacje' },
+  { href: '/about', label: 'O nas' },
 ];
 
 export default function Navbar() {
@@ -69,7 +69,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/kontakt" className="btn-primary" style={{ padding: '10px 20px', fontSize: '14px' }}>
+          <Link href="/contact" className="btn-primary" style={{ padding: '10px 20px', fontSize: '14px' }}>
             Skontaktuj się
           </Link>
         </div>
@@ -104,7 +104,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/kontakt" className="btn-primary" onClick={() => setOpen(false)} style={{ textAlign: 'center', justifyContent: 'center' }}>
+          <Link href="/contact" className="btn-primary" onClick={() => setOpen(false)} style={{ textAlign: 'center', justifyContent: 'center' }}>
             Skontaktuj się
           </Link>
         </div>
